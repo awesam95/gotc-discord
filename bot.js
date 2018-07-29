@@ -24,9 +24,8 @@ client.on('message', message => {
             request
               .get('https://compliment-api.herokuapp.com/')
               .on('response', function(response, body) {
-                if (response.statusCode === '200') {
-                    message.reply(body)
-                }
+                console.log(response.statusCode)
+                message.reply(body)
               })
     }
 });
