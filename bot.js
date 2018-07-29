@@ -25,9 +25,14 @@ client.on('message', message => {
               .get('https://compliment-api.herokuapp.com/')
               .on('response', function(response) {
                 console.log(response.statusCode)
-                console.log(response.headers['content-type'])
                 message.reply(response.statusCode)
               })
+    }
+});
+
+client.on('message', message => {
+    if (message.content === '!check') {
+        message.reply('Let me lol!');
     }
 });
 
