@@ -7,8 +7,14 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
+        message.reply('pong');
+    }
+});
+
+client.on('message', message => {
+    if (message.content === '!gotc') {
+        message.reply('Let me check!');
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
