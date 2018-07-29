@@ -21,9 +21,10 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!version') {
-        message.reply('Let me check! It is 0.0.0.0');
+        message.reply('Let me check! it is 0.0.0.0');
     }
 });
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
