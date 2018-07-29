@@ -20,8 +20,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '!check') {
-        message.reply('Let me lol!');
+    if (message.content === '!version') {
+        message.reply('Let me check! It is 0.0.0.0');
     }
 });
 
