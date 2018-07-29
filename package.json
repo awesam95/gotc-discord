@@ -1,13 +1,11 @@
 {
-  "name": "Test",
-  "description": "Test",
-  "version": "0.0.0",
+  "name": "greeter-bot",
+  "version": "1.0.0",
+  "description": "My own Discord bot",
   "main": "bot.js",
-  "scripts": {
-    "start": "node bot.js"
-  },
+  "author": "YOUR-NAME-HERE",
   "dependencies": {
-    "discord.js": "11.1.0",
-    "request": "2.81.0"
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "winston": "^3.0.0"
   }
 }
