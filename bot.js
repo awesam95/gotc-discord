@@ -25,7 +25,7 @@ client.on('message', message => {
               .get('https://compliment-api.herokuapp.com/')
               .on('response', function(response) {
                 console.log(response.statusCode)
-                message.reply(response.statusCode)
+                message.reply(response.body)
               })
     }
 });
